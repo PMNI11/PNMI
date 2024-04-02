@@ -9,6 +9,11 @@ import Blog from "./components/blog/Blog"
 import Contact from "./components/contact/Contact"
 import Footer from "./components/common/footer/Footer"
 import Home from "./components/home/Home"
+import Uni from "./components/Unilogin/LoginAsUniversity"
+import Dashboard from "./components/Unilogin/Dashboard"
+import AllUniversityData from './components/Unilogin/AllUniversityData'; // Import the new component
+
+
 import UniversityTunis from "./components/Uni/UniversityTunis"
 import UniversityZitouna from "./components/Uni/UniversityZitouna"
 import UniversityMonastir from "./components/Uni/UniversityMonastir"
@@ -50,6 +55,13 @@ function App() {
           <Route exact path='/profil' component={profil} />
           <Route exact path='/journal' component={Blog} />
           <Route exact path='/contact' component={Contact} />
+          <Route exact path='/Uni' component={Uni} />
+          <Route exact path='/Dashboard' component={Dashboard} />
+
+          <Route exact path="/" component={Uni} />
+        <Route path="/Dashboard/:id" component={Dashboard} />
+        <Route path="/AllUniversityData" component={AllUniversityData} /> {/* Add the route for AllUniversityData */}
+      
         </Switch>
         <Footer />
       </Router>

@@ -3,13 +3,51 @@
   padding: 20px 0;
   color: #fff;
 }
+
 .logo h1 {
   font-size: 35px;
   font-weight: 900;
 }
+
 .head .icon {
   margin-left: 10px;
 }
+
+/* Styles for the button */
+.login-button button {
+  padding: 10px; /* Adjust padding to make the button round */
+  border: none;
+  color: #1eb2a6;
+  background-color: transparent; /* Set background color to transparent */
+  transition: background-color 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-button button i {
+  font-size: 20px; /* Adjust icon size as needed */
+}
+
+.login-button button:hover {
+  background-color: #1eb2a6;
+  color: #fff;
+}
+
+/* Rest of the styles remain unchanged */
+
+
+/* Rest of the styles remain unchanged */
+
+
+/* Rest of the styles remain unchanged */
+
+
+/* Rest of the styles remain unchanged */
+
+
+/* Rest of the styles remain unchanged */
+
 /*--------head------------*/
 /*--------header------------*/
 header {

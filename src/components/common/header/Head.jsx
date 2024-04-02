@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Head = () => {
   return (
@@ -16,10 +17,18 @@ const Head = () => {
             <i className='fab fa-twitter icon'></i>
             <i className='fab fa-youtube icon'></i>
           </div>
+
+          <div className="login-button">
+            <Link to="/Uni">
+              <button>
+                <i className="fas fa-user-circle"></i> {/* Replace with appropriate admin icon */}
+              </button>
+            </Link>
+          </div>
         </div>
       </section>
     </>
   )
 }
 
-export default Head
+export default Head;
